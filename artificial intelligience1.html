@@ -1,0 +1,268 @@
+<!doctype html>
+
+<html lang=“en”>
+
+  
+
+<head>
+
+<style>
+
+.hvrtoreveal{
+
+	background-color: #212529
+
+}
+
+
+
+.hvrtoreveal:hover{
+
+    background-color: transparent;
+
+}
+
+</style>
+
+<meta charset = “utf-8”>
+
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+
+
+<title>Artificial Intelligence and Autonomous Machines</title>
+
+</head>
+
+
+
+<body>
+
+
+
+<nav class="navbar navbar-expand-sm bg-light">
+
+
+
+  <!-- Links -->
+
+  <ul class="navbar-nav">
+
+    <li class="nav-item"><strong>
+
+      <a class="nav-link" href="#" style="color:#008080;">Artificial Intelligence: Applications in Computer Science</a>
+
+    </li></strong>
+
+    <li class="nav-item">
+
+      <a class="nav-link" href="/financeai.html" style="color:#527a7a;">Finance</a>
+
+    </li>
+
+    <li class="nav-item">
+
+      <a class="nav-link" href="#" style="color:#527a7a;">Medicine</a>
+
+    </li>
+
+    <li class="nav-item">
+
+      <a class="nav-link" href="/AI-AutonomousMachines.html" style="color:#527a7a;">Autonomous Machines</a>
+
+    </li>
+
+  </ul>
+
+
+
+</nav>
+
+
+
+
+
+<div class= "jumbotron text-center">
+
+<h1>Application of Artificial Intelligence: Alpha Go</h1>
+
+<br>
+ 
+
+</div>
+
+
+
+<div class="container">
+
+	<div class="row">
+
+	<div class="col-sm-8">
+
+	<h2>Alpha Go:</h2> 
+
+	<ul>
+
+	<li style="font-size:18px;">Introduction</li>
+
+	<li style="font-size:18px;">Versions</li>
+
+	<li style="font-size:18px;">Algorithm</li>
+
+	</ul>
+
+	</div>
+
+	<div class="col-sm-4">
+
+	<img  src="http://www.numerama.com/content/uploads/2017/03/alphago.jpg" width="400"class="img-rounded" style="padding-right:50px;" alt="Expanding Mind">
+
+	</div>
+
+	</div>
+
+
+
+<div>
+
+<h3>Introduction</h3> 
+
+
+
+<p>AlphaGo is a computer program that plays the board game Go.[1]It was developed by Alphabet Inc.'s Google DeepMind in London. AlphaGo has several versions including AlphaGo Zero, AlphaGo Master, AlphaGo Lee, etc.[2] 
+In October 2015, AlphaGo became the first computer Go program to beat a human professional Go player without handicaps on a full-sized 19×19 board.[3][4] In March 2016, it beat Lee Sedol in a five-game match, the first time a computer Go program has beaten a 9-dan professional without handicaps.[5] Although it lost to Lee Sedol in the fourth game, Lee resigned in the final game, giving a final score of 4 games to 1 in favour of AlphaGo.</p>
+	
+
+</div>
+
+
+
+<h3>Versions</h3> 
+
+
+
+<p>
+An early version of AlphaGo was tested on hardware with various numbers of CPUs and GPUs, running in asynchronous or distributed mode. Two seconds of thinking time was given to each move.
+The resulting Elo ratings are listed below.[11] In the matches with more time per move higher ratings are achieved.
+</p>
+
+<table  class="wikitable sortable">
+ <th> Configuration and performance</th>
+   <tr>
+     <td>Configuration </td>
+     <td>Search threads </td>
+     <td>No.of CPU </td>
+	 <td>No.of GPU </td>
+     <td>Elo rating </td>
+   </tr>
+   <tr>
+     <td>Single</td>
+	 <td>40</td>
+	 <td>48</td>
+	 <td>1</td>
+	 <td>2,181</td>
+   </tr>
+   <tr>
+     <td>Single</td>
+	 <td>40</td>
+	 <td>48</td>
+	 <td>2</td>
+	 <td>2,738</td>
+   </tr>
+   <tr>
+     <td>Single</td>
+	 <td>40</td>
+	 <td>48</td>
+	 <td>4</td>
+	 <td>2,850</td>
+   </tr>
+   <tr>
+     <td>Single</td>
+	 <td>40</td>
+	 <td>48</td>
+	 <td>8</td>
+	 <td>2,890</td>
+   </tr>
+   <tr>
+     <td>Distributed</td>
+	 <td>12</td>
+	 <td>428</td>
+	 <td>64</td>
+	 <td>2,937</td>
+   </tr>
+   <tr>
+     <td>Distributed</td>
+	 <td>24</td>
+	 <td>764</td>
+	 <td>112</td>
+	 <td>3,079</td>
+   </tr>
+   <tr>
+     <td>Distributed</td>
+	 <td>40</td>
+	 <td>1,202</td>
+	 <td>176</td>
+	 <td>3,140</td>
+   </tr>
+   <tr>
+     <td>Distributed</td>
+	 <td>64</td>
+	 <td>1,920</td>
+	 <td>280</td>
+	 <td>3,168</td>
+   </tr>
+</table>
+
+
+
+<br>
+
+
+
+<h3>Algorithm</h3> 
+
+
+<p>
+As of 2016, AlphaGo's algorithm uses a combination of machine learning and tree search techniques, 
+combined with extensive training, both from human and computer play. It uses Monte Carlo tree search, 
+guided by a "value network" and a "policy network," both implemented using deep neural network technology.
+[3][11] A limited amount of game-specific feature detection pre-processing (for example,
+ to highlight whether a move matches a nakade pattern) is applied to the input before it is sent to the neural networks.[11] 
+The system's neural networks were initially bootstrapped from human gameplay expertise. 
+AlphaGo was initially trained to mimic human play by attempting to match the moves of expert players from recorded historical games,
+ using a database of around 30 million moves.[19] Once it had reached a certain degree of proficiency, 
+ it was trained further by being set to play large numbers of games against other instances of itself, 
+ using reinforcement learning to improve its play.[3] To avoid "disrespectfully" wasting its opponent's time, 
+ the program is specifically programmed to resign if its assessment of win probability falls beneath a certain threshold; for the match against Lee, the resignation threshold was set to 20%.[62]</p>
+
+
+<div>
+
+<br>
+
+
+
+<h4>About the Author</h4> 
+
+<p>Loretta Xu is a computer science student at Durham University. Find her on <a href="www.linkedin.com/in/bo-xu-74b0b5175">Linkedin</a>.</p>
+
+<br>
+
+
+
+
+</ol>
+
+<br>
+
+</div>
+
+</div>
+
+</body>
+
+</html>
